@@ -6,5 +6,4 @@ export const popBg = {
   bubble: "bg-bubble",
   sky: "bg-sky",
   mint: "bg-mint",
-  buffy: "bg-buffy",
 };
