@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Theme-aware colors (values swap between light and dark below) */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+}
+
+/* Pops of color + fonts */
+@theme {
+  --color-tangerine: #ff9152;
+  --color-lilac: #c3b1ff;
+  --color-butter: #ffdb6e;
+  --color-bubble: #ff9cc7;
+  --color-sky: #8fd3ff;
+  --color-mint: #9be3c3;
+  --color-onpop: #1e2b38; /* text color used on top of any pop */
+
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+:root {
+  --bg: #e3eeea;      /* soft sea-glass green */
+  --surface: #f3f8f6;
+  --ink: #1e2b38;
+  --muted: #4a5b68;
+  --line: #c4d5cf;
+  --accent: #3345d6;
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #1d2b34;      /* soft slate, not black */
+  --surface: #253743;
+  --ink: #e8f1ee;
+  --muted: #a8bbc3;
+  --line: #39525e;
+  --accent: #a9b8ff;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+p { text-wrap: pretty; }
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  background: var(--color-butter);
+  color: var(--color-onpop);
+  font-weight: 600;
+  transition: top 0.15s;
+}
+.skip-link:focus { top: 1rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
