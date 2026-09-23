@@ -2,11 +2,22 @@ import { popBg } from "./colors";
 import { ExternalIcon, GitHubIcon } from "./Icons";
 
 export default function ProjectCard({ project }) {
-  const { title, description, stack = [], live, code, image, imageAlt, color = "lilac" } = project;
+  const {
+    title,
+    description,
+    stack = [],
+    live,
+    code,
+    image,
+    imageAlt,
+    color = "lilac",
+  } = project;
 
   return (
     <article className="flex flex-col rounded-lg bg-surface p-2.5 ring-1 ring-line">
-      <div className={`${popBg[color] || popBg.lilac} relative aspect-[4/3] overflow-hidden rounded-md`}>
+      <div
+        className={`${popBg[color] || popBg.lilac} relative aspect-[4/3] overflow-hidden rounded-md`}
+      >
         {image ? (
           <img
             src={image}
@@ -31,7 +42,10 @@ export default function ProjectCard({ project }) {
         {stack.length > 0 && (
           <ul aria-label="Built with" className="flex flex-wrap gap-2">
             {stack.map((s) => (
-              <li key={s} className="rounded-md px-3 py-1 text-sm ring-1 ring-line">
+              <li
+                key={crypto.randomUUID()}
+                className="rounded-md px-3 py-1 text-sm ring-1 ring-line"
+              >
                 {s}
               </li>
             ))}
@@ -61,7 +75,9 @@ export default function ProjectCard({ project }) {
               >
                 <GitHubIcon className="size-4" />
                 Code
-                <span className="sr-only">: {title} on GitHub (opens in a new tab)</span>
+                <span className="sr-only">
+                  : {title} on GitHub (opens in a new tab)
+                </span>
               </a>
             )}
           </div>

@@ -21,13 +21,14 @@
   --color-sky: #8fd3ff;
   --color-mint: #9be3c3;
   --color-onpop: #1e2b38; /* text color used on top of any pop */
-
+  --color-buffy: rgb(45, 38, 27);
   --font-display: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-sans: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans:
+    "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 :root {
-  --bg: #e3eeea;      /* soft sea-glass green */
+  --bg: #e3eeea; /* soft sea-glass green */
   --surface: #f3f8f6;
   --ink: #1e2b38;
   --muted: #4a5b68;
@@ -37,7 +38,7 @@
 }
 
 .dark {
-  --bg: #1d2b34;      /* soft slate, not black */
+  --bg: #1d2b34; /* soft slate, not black */
   --surface: #253743;
   --ink: #e8f1ee;
   --muted: #a8bbc3;
@@ -60,13 +61,18 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-display);
   line-height: 1.1;
   text-wrap: balance;
 }
 
-p { text-wrap: pretty; }
+p {
+  text-wrap: pretty;
+}
 
 :focus-visible {
   outline: 3px solid var(--accent);
@@ -85,8 +91,12 @@ p { text-wrap: pretty; }
   font-weight: 600;
   transition: top 0.15s;
 }
-.skip-link:focus { top: 1rem; }
+.skip-link:focus {
+  top: 1rem;
+}
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
+  html {
+    scroll-behavior: auto;
+  }
 }

@@ -15,7 +15,7 @@ export const site = {
   availability: "Open to frontend roles", // set to "" to hide
   resumePdf: "resume.pdf", // drop resume.pdf into /public, or set to "" to hide the button
   linkedin: "https://www.linkedin.com/in/akosuak/",
-  github: "https://github.com/your-handle",
+  github: "https://github.com/corianderstudios",
 };
 
 export const skills = [
@@ -35,9 +35,9 @@ export const projects = {
       title: "Tidepool",
       description:
         "Booking flow for a neighborhood swim school. Cut checkout from six steps to two and passed a full WCAG 2.2 AA audit.",
-      stack: ["React", "TypeScript", "Tailwind"],
-      live: "https://example.com",
-      code: "https://github.com/your-handle/tidepool",
+      stack: [],
+      live: "",
+      code: "",
       image: "", // e.g. "projects/tidepool.png"
       imageAlt: "",
       color: "sky",
@@ -46,9 +46,9 @@ export const projects = {
       title: "Ledgerly UI",
       description:
         "A design system of 40 accessible components with tokens, docs and visual regression tests, shared by three product teams.",
-      stack: ["React", "Storybook", "Radix", "Vitest"],
-      live: "https://example.com",
-      code: "https://github.com/your-handle/ledgerly-ui",
+      stack: [],
+      live: "",
+      code: "",
       image: "",
       imageAlt: "",
       color: "butter",
@@ -57,9 +57,9 @@ export const projects = {
       title: "Plant Pal",
       description:
         "A watering tracker that works offline and syncs when you're back online. Installable as an app on your phone.",
-      stack: ["React", "IndexedDB", "PWA"],
-      live: "https://example.com",
-      code: "https://github.com/your-handle/plant-pal",
+      stack: [],
+      live: "",
+      code: "",
       image: "",
       imageAlt: "",
       color: "mint",
@@ -150,7 +150,7 @@ export const hobbies = [
   {
     name: "Building Hardware",
     color: "butter",
-    blurb: "Cyberdeck on the way",
+    blurb: "I like to solder",
   },
   {
     name: "Running",
