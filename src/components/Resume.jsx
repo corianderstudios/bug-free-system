@@ -58,7 +58,7 @@ export default function Resume() {
         <ul className="mt-12 divide-y divide-line border-y border-line">
           {experience.map((job) => (
             <li
-              key={job.company + job.start}
+              key={crypto.randomUUID()}
               className="flex gap-5 py-8 sm:gap-8 sm:py-10"
             >
               <Logo job={job} />

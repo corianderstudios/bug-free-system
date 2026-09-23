@@ -28,15 +28,21 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line/70 bg-bg/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3 sm:px-8">
-        <a href="#top" className="rounded-md font-display text-xl font-semibold tracking-tight">
+        <a
+          href="#top"
+          className="rounded-md font-display text-xl font-semibold tracking-tight"
+        >
           {site.name}
         </a>
 
         <nav aria-label="Main" className="hidden md:block">
           <ul className="flex items-center gap-1">
             {links.map((l) => (
-              <li key={l.href}>
-                <a href={l.href} className="rounded-md px-4 py-2.5 transition-colors hover:bg-surface">
+              <li key={crypto.randomUUID()}>
+                <a
+                  href={l.href}
+                  className="rounded-md px-4 py-2.5 transition-colors hover:bg-surface"
+                >
                   {l.label}
                 </a>
               </li>
@@ -67,10 +73,15 @@ export default function Header() {
         </div>
       </div>
 
-      <nav id="mobile-nav" aria-label="Main" hidden={!open} className="border-t border-line/70 md:hidden">
+      <nav
+        id="mobile-nav"
+        aria-label="Main"
+        hidden={!open}
+        className="border-t border-line/70 md:hidden"
+      >
         <ul className="mx-auto flex max-w-6xl flex-col px-5 py-3">
           {links.map((l) => (
-            <li key={l.href}>
+            <li key={crypto.randomUUID()}>
               <a
                 href={l.href}
                 onClick={() => setOpen(false)}
