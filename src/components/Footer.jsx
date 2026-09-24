@@ -34,7 +34,11 @@ export default function Footer() {
               onClick={copyEmail}
               className="inline-flex min-h-11 items-center gap-1.5 rounded-md px-3 text-sm font-semibold ring-1 ring-line hover:bg-surface"
             >
-              {copied ? <CheckIcon className="size-4" /> : <CopyIcon className="size-4" />}
+              {copied ? (
+                <CheckIcon className="size-4" />
+              ) : (
+                <CopyIcon className="size-4" />
+              )}
               {copied ? "Copied" : "Copy"}
               <span className="sr-only"> email address</span>
             </button>

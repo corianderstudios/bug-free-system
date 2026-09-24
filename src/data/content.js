@@ -8,9 +8,10 @@
 export const site = {
   name: "Akosua Kernizan",
   role: "Frontend developer",
-  location: "New York",
+  location: "NYC",
   email: "akosuakernizan@gmail.com",
-  intro: "",
+  intro:
+    "Frontend Dev with experience across multiple industires. Specializing in JS,Typescript, and React.",
   availability: "Open to frontend roles",
   resumePdf: "resume.pdf",
   linkedin: "https://www.linkedin.com/in/akosuak/",
