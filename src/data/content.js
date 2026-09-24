@@ -32,14 +32,14 @@ export const skills = [
 export const projects = {
   human: [
     {
-      title: "Tidepool",
+      title: "Hacker News Client",
       description:
-        "Booking flow for a neighborhood swim school. Cut checkout from six steps to two and passed a full WCAG 2.2 AA audit.",
-      stack: [],
+        "A modern client for Hacker News, a news aggregation and discussion platform that caters to tech enthusiasts.",
+      stack: ["React", "Vite", "Tailwind"],
       live: "",
-      code: "",
-      image: "", // e.g. "projects/tidepool.png"
-      imageAlt: "",
+      code: "https://github.com/corianderstudios/hacker-news-client",
+      image: "images/HackerNews.png", // e.g. "projects/tidepool.png"
+      imageAlt: "Image of Hacker News Client homepage",
       color: "sky",
     },
     {

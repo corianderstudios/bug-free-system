@@ -23,7 +23,7 @@ export default function ProjectCard({ project }) {
             src={image}
             alt={imageAlt || `Screenshot of ${title}`}
             loading="lazy"
-            className="size-full object-cover"
+            className="size-full object-fill"
           />
         ) : (
           <span
