@@ -15,10 +15,15 @@ export default function Hero() {
         </h1>
 
         <div className="mt-12 grid gap-8 md:grid-cols-[minmax(0,36rem)_auto] md:items-end md:justify-between">
-          <p className="text-xl leading-relaxed sm:text-2xl sm:leading-relaxed">{site.intro}</p>
+          <p className="text-xl leading-relaxed sm:text-2xl sm:leading-relaxed">
+            {site.intro}
+          </p>
           {site.availability && (
             <p className="inline-flex w-fit items-center gap-2.5 rounded-md bg-surface px-4 py-2 ring-1 ring-line">
-              <span aria-hidden="true" className="size-2 rounded-full bg-mint ring-4 ring-mint/30" />
+              <span
+                aria-hidden="true"
+                className="size-2 rounded-full bg-mint ring-4 ring-mint/30"
+              />
               {site.availability}
             </p>
           )}

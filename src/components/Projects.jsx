@@ -6,16 +6,14 @@ const groups = [
     id: "human-coded",
     title: "Human-coded",
     badge: "bg-butter",
-    blurb:
-      "Written and reviewed line by line. The architecture, state, accessibility and tests are my own work.",
+    blurb: "",
     items: projects.human,
   },
   {
     id: "vibe-coded",
     title: "Vibe-coded",
     badge: "bg-lilac",
-    blurb:
-      "Built by prompting AI tools, then testing and shaping the result. Quick experiments where speed mattered most.",
+    blurb: "",
     items: projects.vibe,
   },
 ];

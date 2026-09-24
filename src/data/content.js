@@ -8,12 +8,12 @@
 export const site = {
   name: "Akosua Kernizan",
   role: "Frontend developer",
-  location: "New York",
+  location: "NYC",
   email: "akosuakernizan@gmail.com",
   intro:
-    "I build interfaces that are calm to use, quick to load, and work for everyone, including people on a keyboard or a screen reader.",
-  availability: "Open to frontend roles", // set to "" to hide
-  resumePdf: "resume.pdf", // drop resume.pdf into /public, or set to "" to hide the button
+    "Frontend Dev with experience across multiple industires. Specializing in JS,Typescript, and React.",
+  availability: "Open to frontend roles",
+  resumePdf: "resume.pdf",
   linkedin: "https://www.linkedin.com/in/akosuak/",
   github: "https://github.com/corianderstudios",
 };
@@ -72,8 +72,8 @@ export const projects = {
       stack: ["Claude", "React", "Vite", "Tailwind"],
       live: "https://corianderstudios.github.io/fraction-lab/",
       code: "https://github.com/corianderstudios/fraction-lab",
-      image: "",
-      imageAlt: "",
+      image: "images/FractionLab.png",
+      imageAlt: "Image of fraction lab homepage",
       color: "lilac",
     },
     {
@@ -83,8 +83,8 @@ export const projects = {
       stack: ["Claude", "React", "Vite", "Tailwind"],
       live: "https://corianderstudios.github.io/DSA-tutor/",
       code: "https://github.com/corianderstudios/DSA-tutor",
-      image: "",
-      imageAlt: "",
+      image: "images/DSA.png",
+      imageAlt: "Image of DSA tutor homepage",
       color: "bubble",
     },
     {
@@ -93,8 +93,8 @@ export const projects = {
       stack: ["Claude", "React", "Vite"],
       live: "https://corianderstudios.github.io/multi-step-form-builder/",
       code: "https://github.com/corianderstudios/multi-step-form-builder",
-      image: "",
-      imageAlt: "",
+      image: "images/Stepwise.png",
+      imageAlt: "Image of stepwise homepage",
       color: "tangerine",
     },
     {
@@ -104,8 +104,8 @@ export const projects = {
       stack: ["Claude", "React", "Vite"],
       live: "https://corianderstudios.github.io/ts-tutor/",
       code: "https://github.com/corianderstudios/ts-tutor",
-      image: "",
-      imageAlt: "",
+      image: "images/TypeScript.png",
+      imageAlt: "Image of typescript tutor homepage",
       color: "tangerine",
     },
   ],
@@ -155,12 +155,12 @@ export const hobbies = [
   {
     name: "Running",
     color: "bubble",
-    blurb: "30 miles a week. 1/2 marathon coming soon.",
+    blurb: "30 miles a week.",
   },
   {
     name: "Travel",
     color: "sky",
-    blurb: "Climbed a volcano in Guatemala to see antoher volcao errupt.",
+    blurb: "Climbed a volcano in Guatemala to see another volcao errupt.",
   },
   {
     name: "Baking",
