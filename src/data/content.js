@@ -42,28 +42,6 @@ export const projects = {
       imageAlt: "Image of Hacker News Client homepage",
       color: "sky",
     },
-    {
-      title: "Ledgerly UI",
-      description:
-        "A design system of 40 accessible components with tokens, docs and visual regression tests, shared by three product teams.",
-      stack: [],
-      live: "",
-      code: "",
-      image: "",
-      imageAlt: "",
-      color: "butter",
-    },
-    {
-      title: "Plant Pal",
-      description:
-        "A watering tracker that works offline and syncs when you're back online. Installable as an app on your phone.",
-      stack: [],
-      live: "",
-      code: "",
-      image: "",
-      imageAlt: "",
-      color: "mint",
-    },
   ],
   vibe: [
     {
