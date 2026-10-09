@@ -16,7 +16,7 @@ export default function ProjectCard({ project }) {
   return (
     <article className="flex flex-col rounded-lg bg-surface p-2.5 ring-1 ring-line">
       <div
-        className={`${popBg[color] || popBg.lilac} relative aspect-[4/3] overflow-hidden rounded-md`}
+        className={`${popBg[color] || popBg.sky} relative aspect-[4/3] overflow-hidden rounded-md`}
       >
         {image ? (
           <img

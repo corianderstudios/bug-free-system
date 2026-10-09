@@ -35,40 +35,19 @@ export const projects = {
       title: "Hacker News Client",
       description:
         "A modern client for Hacker News, a news aggregation and discussion platform that caters to tech enthusiasts.",
-      stack: ["React", "Vite", "Tailwind"],
-      live: "",
+      stack: ["React", "React Router", "TanStack", "Vite", "Tailwind"],
+      live: "https://corianderstudios.github.io/new",
       code: "https://github.com/corianderstudios/hacker-news-client",
       image: "images/HackerNews.png", // e.g. "projects/tidepool.png"
       imageAlt: "Image of Hacker News Client homepage",
       color: "sky",
     },
-    {
-      title: "Ledgerly UI",
-      description:
-        "A design system of 40 accessible components with tokens, docs and visual regression tests, shared by three product teams.",
-      stack: [],
-      live: "",
-      code: "",
-      image: "",
-      imageAlt: "",
-      color: "butter",
-    },
-    {
-      title: "Plant Pal",
-      description:
-        "A watering tracker that works offline and syncs when you're back online. Installable as an app on your phone.",
-      stack: [],
-      live: "",
-      code: "",
-      image: "",
-      imageAlt: "",
-      color: "mint",
-    },
   ],
   vibe: [
     {
       title: "Fraction Lab",
-      description: "Teaches you how fractions work",
+      description:
+        "A web app that teaches how fractions work: basics, adding, subtracting, multiplying and dividing.",
       stack: ["Claude", "React", "Vite", "Tailwind"],
       live: "https://corianderstudios.github.io/fraction-lab/",
       code: "https://github.com/corianderstudios/fraction-lab",
@@ -89,7 +68,8 @@ export const projects = {
     },
     {
       title: "Stepwise",
-      description: "Multi-step Form Builder",
+      description:
+        " A web app that writes a multistep form component for you. Pick how many steps you need, name each step and its fields, choose a framework, press Generate code, and copy the result.",
       stack: ["Claude", "React", "Vite"],
       live: "https://corianderstudios.github.io/multi-step-form-builder/",
       code: "https://github.com/corianderstudios/multi-step-form-builder",
@@ -106,7 +86,18 @@ export const projects = {
       code: "https://github.com/corianderstudios/ts-tutor",
       image: "images/TypeScript.png",
       imageAlt: "Image of typescript tutor homepage",
-      color: "tangerine",
+      color: "butter",
+    },
+    {
+      title: "Access Ready",
+      description:
+        "A study app for web developers preparing for the IAAP CPACC, WAS and ADS accessibility certifications.",
+      stack: ["Claude", "React", "Vite"],
+      live: "https://corianderstudios.github.io/access-ready/",
+      code: "https://github.com/corianderstudios/access-ready",
+      image: "images/AccessReady.png",
+      imageAlt: "Image of access ready homepage",
+      color: "sky",
     },
   ],
 };
@@ -148,9 +139,9 @@ export const experience = [
 
 export const hobbies = [
   {
-    name: "Building Hardware",
-    color: "butter",
-    blurb: "I like to solder",
+    name: "Baking",
+    color: "lilac",
+    blurb: "My oven runs hot, but the cookies are delicious.",
   },
   {
     name: "Running",
@@ -158,13 +149,13 @@ export const hobbies = [
     blurb: "30 miles a week.",
   },
   {
+    name: "Building Hardware",
+    color: "butter",
+    blurb: "I like to solder",
+  },
+  {
     name: "Travel",
     color: "sky",
     blurb: "Climbed a volcano in Guatemala to see another volcao errupt.",
-  },
-  {
-    name: "Baking",
-    color: "lilac",
-    blurb: "My oven runs hot, but the cookies are delicious.",
   },
 ];
