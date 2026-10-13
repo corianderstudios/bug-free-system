@@ -1,6 +1,7 @@
 import { experience, site } from "../data/content";
 import { popBg } from "./colors";
 import { DownloadIcon } from "./Icons";
+import SectionHeading from "./SectionHeading";
 
 function initials(name) {
   return name
@@ -36,46 +37,47 @@ export default function Resume() {
       className="bg-surface/60 py-20 sm:py-28"
     >
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-          <h2
-            id="resume-title"
-            className="text-5xl font-medium tracking-tight sm:text-6xl"
-          >
-            Resume
-          </h2>
-          {site.resumePdf && (
-            <a
-              href={site.resumePdf}
-              download
-              className="inline-flex min-h-12 w-fit items-center gap-2 rounded-md px-5 font-semibold ring-1 ring-ink/30 hover:bg-bg"
-            >
-              <DownloadIcon />
-              Download resume (PDF)
-            </a>
-          )}
-        </div>
+        <SectionHeading
+          id="resume-title"
+          title="Resume"
+          action={
+            site.resumePdf && (
+              <a
+                href={site.resumePdf}
+                download
+                className="inline-flex min-h-11 w-fit items-center gap-2 rounded-md px-4 font-semibold ring-1 ring-ink transition-colors hover:bg-ink hover:text-bg"
+              >
+                <DownloadIcon />
+                Download resume (PDF)
+              </a>
+            )
+          }
+        ></SectionHeading>
 
-        <ul className="mt-12 divide-y divide-line border-y border-line">
+        <ul className="mt-10">
           {experience.map((job) => (
             <li
-              key={crypto.randomUUID()}
-              className="flex gap-5 py-8 sm:gap-8 sm:py-10"
+              key={job.company + job.start}
+              className="grid gap-5 border-b border-line py-8 first:border-t sm:py-10 md:grid-cols-12"
             >
-              <Logo job={job} />
-              <div className="min-w-0 flex-1">
-                <div className="flex flex-col gap-1 md:flex-row md:items-baseline md:justify-between md:gap-6">
-                  <h3 className="text-2xl font-medium sm:text-3xl">
-                    {job.company}
-                  </h3>
-                  <p className="shrink-0 text-muted">
+              <div className="flex gap-4 md:col-span-5">
+                <Logo job={job} />
+                <div className="min-w-0">
+                  <h3 className="text-2xl sm:text-3xl">{job.company}</h3>
+                  <p className="mt-1">{job.role}</p>
+                  <p className="text-sm text-muted">
                     {job.start}
                     <span aria-hidden="true"> – </span>
                     <span className="sr-only"> to </span>
                     {job.end}
                   </p>
                 </div>
-                <p className="mt-1 font-semibold">{job.role}</p>
               </div>
+              <ul className="list-disc space-y-2 pl-5 marker:text-tangerine md:col-span-6 md:col-start-7">
+                {job.bullets.map((b) => (
+                  <li key={b}>{b}</li>
+                ))}
+              </ul>
             </li>
           ))}
         </ul>

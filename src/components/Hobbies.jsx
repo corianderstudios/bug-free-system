@@ -1,5 +1,6 @@
 import { hobbies } from "../data/content";
 import { popBg } from "./colors";
+import SectionHeading from "./SectionHeading";
 
 export default function Hobbies() {
   return (
@@ -8,15 +9,7 @@ export default function Hobbies() {
       aria-labelledby="hobbies-title"
       className="mx-auto max-w-6xl px-5 py-20 sm:px-8 sm:py-28"
     >
-      <h2
-        id="hobbies-title"
-        className="text-5xl font-medium tracking-tight sm:text-6xl"
-      >
-        Outside work
-      </h2>
-      <p className="mt-4 max-w-xl text-lg text-muted">
-        What I'm doing when I'm away from a code editor.
-      </p>
+      <SectionHeading id="hobbies-title" title="Hobbies"></SectionHeading>
 
       <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {hobbies.map((h) => (

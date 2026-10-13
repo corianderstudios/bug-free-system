@@ -7,7 +7,7 @@
 
 export const site = {
   name: "Akosua Kernizan",
-  role: "Frontend developer",
+  role: "Software Engineer, Frontend",
   location: "NYC",
   email: "akosuakernizan@gmail.com",
   intro:
@@ -42,8 +42,6 @@ export const projects = {
       imageAlt: "Image of Hacker News Client homepage",
       color: "sky",
     },
-  ],
-  vibe: [
     {
       title: "Fraction Lab",
       description:
@@ -106,10 +104,14 @@ export const experience = [
   {
     company: "Reddit Inc.",
     logo: "logos/reddit-icon.svg",
-    role: "Software Engineer",
+    role: "Software Engineer, Frontend",
     start: "2021",
     end: "2026",
     color: "sky",
+    bullets: [
+      "Led design and rollout of an LLM-based detection system to identify NCIM-risk subreddits, expanding user warning eligibility beyond manually-banned communities and reaching 10,400+ users with a 79% verified accuracy rate (7% false positive rate)",
+      "Designed and built the frontend for user-blocking functionality end-to-end, delivering a seamless, intuitive user experience.",
+    ],
   },
   {
     company: "Buffy",
@@ -118,6 +120,10 @@ export const experience = [
     start: "2019",
     end: "2020",
     color: "buffy",
+    bullets: [
+      "Migrated legacy codebase to a headless architecture using GatsbyJS and Contentful, improving performance and aligning with modern web standards.",
+      "Maintained legacy Shopify storefront (Liquid, jQuery) to preserve site stability during the migration.",
+    ],
   },
   {
     company: "Wunderkind",
@@ -126,6 +132,10 @@ export const experience = [
     start: "2016",
     end: "2019",
     color: "butter",
+    bullets: [
+      "Built an in-house PHP/SQL application to visualize client tracking variables and their downstream campaign dependencies, reducing redundancy and simplifying code removal.",
+      "Led intra-departmental presentations on debugging ESP campaigns/APIs, improving turnaround time and cross-team communication",
+    ],
   },
   {
     company: "Sesame Workshop",
@@ -134,6 +144,10 @@ export const experience = [
     start: "2015",
     end: "2016",
     color: "butter",
+    bullets: [
+      `Built the "Special Projects Department" portfolio site using jQuery, uiBootstrap, and AngularJS, adopting an MVC architecture to streamline future updates`,
+      "Created custom HTML/CSS/JavaScript English-learning games for pre-K children in China and Japan using a custom CMS",
+    ],
   },
 ];
 
@@ -146,7 +160,7 @@ export const hobbies = [
   {
     name: "Running",
     color: "bubble",
-    blurb: "30 miles a week.",
+    blurb: "9 + 1 baby!!",
   },
   {
     name: "Building Hardware",

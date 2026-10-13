@@ -94,6 +94,40 @@ p {
   top: 1rem;
 }
 
+/* "Open to roles" status: a honey dot that sends out a soft ripple */
+.status-dot {
+  position: relative;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background: var(--color-tangerine);
+}
+.status-dot::before,
+.status-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--color-tangerine);
+  animation: status-ripple 2.4s cubic-bezier(0.2, 0.6, 0.3, 1) infinite;
+}
+.status-dot::after {
+  animation-delay: 1.2s;
+}
+
+@keyframes status-ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(3.4);
+    opacity: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
