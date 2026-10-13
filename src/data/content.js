@@ -10,8 +10,7 @@ export const site = {
   role: "Software Engineer, Frontend",
   location: "NYC",
   email: "akosuakernizan@gmail.com",
-  intro:
-    "Frontend Dev with experience across multiple industires. Specializing in JS,Typescript, and React.",
+  intro: "Frontend Dev with experience across multiple industires.",
   availability: "Open to frontend roles",
   resumePdf: "resume.pdf",
   linkedin: "https://www.linkedin.com/in/akosuak/",
