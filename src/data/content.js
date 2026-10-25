@@ -115,7 +115,7 @@ export const experience = [
   {
     company: "Buffy",
     logo: "",
-    role: "Frontend Developer",
+    role: "Fullstack Developer",
     start: "2019",
     end: "2020",
     color: "buffy",
