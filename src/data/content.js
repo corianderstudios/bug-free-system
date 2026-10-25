@@ -35,7 +35,7 @@ export const projects = {
       description:
         "A modern client for Hacker News, a news aggregation and discussion platform that caters to tech enthusiasts.",
       stack: ["React", "React Router", "TanStack", "Vite", "Tailwind"],
-      live: "https://corianderstudios.github.io/new",
+      live: "https://corianderstudios.github.io/hacker-news-client/",
       code: "https://github.com/corianderstudios/hacker-news-client",
       image: "images/HackerNews.png", // e.g. "projects/tidepool.png"
       imageAlt: "Image of Hacker News Client homepage",
