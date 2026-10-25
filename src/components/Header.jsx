@@ -54,7 +54,7 @@ export default function Header() {
           <ThemeToggle />
           <a
             href={`mailto:${site.email}`}
-            className="inline-flex min-h-11 items-center gap-2 rounded-md bg-tangerine px-5 font-semibold text-onpop"
+            className="inline-flex min-h-11 items-center gap-2 rounded-md bg-sky px-3 font-semibold text-onpop"
           >
             <MailIcon />
             Email me

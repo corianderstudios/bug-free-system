@@ -67,7 +67,7 @@ export const projects = {
       title: "Stepwise",
       description:
         " A web app that writes a multistep form component for you. Pick how many steps you need, name each step and its fields, choose a framework, press Generate code, and copy the result.",
-      stack: ["Claude", "React", "Vite"],
+      stack: ["Claude", "React", "Vite", "Tailwind"],
       live: "https://corianderstudios.github.io/multi-step-form-builder/",
       code: "https://github.com/corianderstudios/multi-step-form-builder",
       image: "images/Stepwise.png",
@@ -78,7 +78,7 @@ export const projects = {
       title: "TypeScript Tutor",
       description:
         "Interactive learning platform designed to help users master TypeScript through a hands-on approach.",
-      stack: ["Claude", "React", "Vite"],
+      stack: ["Claude", "React", "Vite", "Tailwind"],
       live: "https://corianderstudios.github.io/ts-tutor/",
       code: "https://github.com/corianderstudios/ts-tutor",
       image: "images/TypeScript.png",
@@ -89,7 +89,7 @@ export const projects = {
       title: "Access Ready",
       description:
         "A study app for web developers preparing for the IAAP CPACC, WAS and ADS accessibility certifications.",
-      stack: ["Claude", "React", "Vite"],
+      stack: ["Claude", "React", "Vite", "Tailwind"],
       live: "https://corianderstudios.github.io/access-ready/",
       code: "https://github.com/corianderstudios/access-ready",
       image: "images/AccessReady.png",
